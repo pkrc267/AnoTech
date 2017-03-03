@@ -1,0 +1,30 @@
+/* This file contains custom CSS styling */
+
+.make-bold{
+    font-weight: bold;
+}
+
+.make-thick{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.textallign-right{
+    text-align: right;
+}
+
+.floater-left{
+    float: left;
+}
+
+.floater-right{
+    float: right;
+}
+
+.footer_design{
+    padding:10px 0;
+    background-color: #101010;
+    color: #9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
