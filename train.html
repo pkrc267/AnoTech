@@ -51,7 +51,7 @@
     <div style="width: 100%">
          <h2>Let's Train our System</h2><br><br>
         <div class="row" style="width: 100%">
-              <form class="form-inline col-xs-offset-1" method="post" action="test.html"> <!-- //make action = anotech.php -->
+              <form class="form-inline col-xs-offset-1" method="" action="test.html"> <!-- make method='post'||make action = 'anotech.php' -->
                   <div class="form-group col-xs-2">
                       <h4><label for="training_file">Feed Dataset: </label></h4>
                   </div>
@@ -59,7 +59,10 @@
                       <input type="file" accept=".csv" name="training_file">
                   </div>
                   <div class="form-group">
-                      <input type="submit" name="upload" class="btn btn-primary" value="Upload">
+                  <!--
+                      <input type="submit" name="upload" class="btn btn-primary" value="Upload" href="test.html">
+                      -->
+                      <a href="test.html" class="btn btn-primary">Upload</a><!-- only for review 1 -->
                   </div>
               </form>
         </div><br>
