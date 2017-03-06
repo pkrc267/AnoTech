@@ -55,7 +55,6 @@
                 </div>
             </div>
     </div>
-
     <!--Testing Section-->
     <div class="container-fluid">
         <div id="test-section">
@@ -67,9 +66,4 @@
             </div>
         </div>
     </div>
-
-    <?php
-        include "includes/footer.php";
-    ?>
-
 </body>
