@@ -5,6 +5,11 @@
     background-size: cover;
 }
 
+.ano_title{
+ font-size: 52px;
+ color: #757575;
+}
+
 #banner_content{
     position: relative;
     padding-top: 6%;

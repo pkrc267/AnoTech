@@ -55,7 +55,6 @@
                 </div>
             </div>
     </div>
-
     <!--Testing Section-->
     <div class="container-fluid">
         <div id="test-section">
@@ -67,5 +66,4 @@
             </div>
         </div>
     </div>
-
 </body>

@@ -66,10 +66,5 @@
         </div><br>
     </div>
     <hr>
-
     <br><br>
-    <?php
-    include "includes/footer.php";
-    ?>
-
 </body>
