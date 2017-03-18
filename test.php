@@ -23,16 +23,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand make-bold" href="index.html">AnoTech</a>
+                <a class="navbar-brand make-bold" href="index.php">AnoTech</a>
             </div>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav navbar-right">
                     <li class=""><a href="train.php" class="make-bold active"><span class="glyphicon glyphicon-cog"></span> Train</a></li>
                     <li><a href="#" class="make-bold"><span class="glyphicon glyphicon-wrench"></span> Test</a></li>
+                    <li><a href="preCheck.php" class="make-bold"><span class="glyphicon glyphicon-print"></span> Check Your data</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Intro Banner -->
     <div id="test-banner">
         <div class="container">
@@ -47,6 +49,7 @@
             </center>
         </div>
     </div>
+
     <!-- Input form -->
     <hr>
     <div style="width: 100%">
@@ -66,5 +69,10 @@
         </div><br>
     </div>
     <hr>
+
     <br><br>
+    <?php
+    include "includes/footer.php";
+    ?>
+
 </body>

@@ -28,6 +28,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class=""><a href="train.php" class="make-bold"><span class="glyphicon glyphicon-cog"></span> Train</a></li>
                     <li><a href="test.php" class="make-bold"><span class="glyphicon glyphicon-wrench"></span> Test</a></li>
+                    <li><a href="preCheck.php" class="make-bold"><span class="glyphicon glyphicon-print"></span> Check Your data</a></li>
                 </ul>
             </div>
         </div>
@@ -39,11 +40,21 @@
            <center>
                <div id="banner_content" style="align-content: center">
                    <h1 class="animated fadeInUp">Welcome to AnoTech</h1>
-                   <!--TODO: make this animate fadeInUp-->
                </div>
            </center>
        </div>
    </div>
+
+    <!--PreCheck Section-->
+    <div class="container-fluid">
+        <div id="precheck-section">
+            <div class="precheck-content">
+                <h2>Let's Check your Data!</h2>
+                <h3>Before going on with the usual proceedings, how about you check your data!</h3>
+                <a href="preCheck.php" class="btn btn-default btn-lg active">Pre-check</a>
+            </div>
+        </div>
+    </div>
 
     <!--Training section-->
     <div class="container-fluid">
@@ -55,6 +66,7 @@
                 </div>
             </div>
     </div>
+
     <!--Testing Section-->
     <div class="container-fluid">
         <div id="test-section">
@@ -66,4 +78,9 @@
             </div>
         </div>
     </div>
+
+    <?php
+        include "includes/footer.php";
+    ?>
+
 </body>
