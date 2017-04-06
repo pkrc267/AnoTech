@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['upload'])){
+if(!isset($_POST['upload'])){
 
   print ("Python output: <br>");
   
