@@ -10,12 +10,12 @@ if(!isset($_POST['upload'])){
 
 ?>
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>anotech</title>
 </head>
 <body>
 	<a href="test.html">click</a>
+	<iframe src="temp-plot.html" height="400px"width="400px"></iframe>
 </body>
 </html>
