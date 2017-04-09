@@ -1,5 +1,9 @@
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
+import plotly
+import plotly.tools as tls
+from plotly.graph_objs import Scatter, Layout
+
 # %matplotlib inline
 
 from numpy import genfromtxt
@@ -9,10 +13,11 @@ from scipy.stats import norm
 def read_dataset(filePath,delimiter=','):
     return genfromtxt(filePath, delimiter=delimiter)
 
-"""def feature_normalize(dataset):
+def feature_normalize(dataset):
     mu = np.mean(dataset,axis=0)
     sigma = np.std(dataset,axis=0)
-    return (dataset - mu)/sigma"""
+    return (dataset - mu)/sigma
+
 def estimateMuSigma(dataset):
     mu = np.mean(dataset)
     sigma = np.std(dataset)
@@ -47,12 +52,15 @@ gt_data = read_dataset('python_test_real_1.csv')
 
 n_training_samples = tr_data.shape[0]	# shape[0] => number of rows
 n_dim = tr_data.shape[1]				# shape[1] => number of columns
+
 """
 plt.figure()
 plt.xlabel("time (hr)")
 plt.ylabel("values ()")
 plt.plot(tr_data[:,0],tr_data[:,1],"bx")
-plt.show()"""
+plt.show()
+"""
+
 """ real calculation starts here """
 
 mu, sigma = estimateMuSigma(tr_data[:,1])
@@ -61,9 +69,17 @@ p = univariateGaussian(tr_data[:,1],mu,sigma)
 fscore, ep = selectThresholdByCV(p,gt_data[:,2])
 outliers = np.asarray(np.where(p < ep))
 print(outliers)
-"""plt.figure() 
+
+graph_output = plotly.offline.plot({
+    "data": [Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
+    "layout": Layout(title="hello world")
+})
+
+"""
+plt.figure() 
 plt.xlabel("Time (hr)") 
 plt.ylabel("Values ()") 
 plt.plot(tr_data[:,0],tr_data[:,1],"bx")
 plt.plot(tr_data[outliers,0],tr_data[outliers,1],"ro") 
-plt.show()"""
+plt.show()
+"""
