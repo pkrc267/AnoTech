@@ -2,20 +2,27 @@
 
 if(!isset($_POST['upload'])){
 
-  print ("Python output: <br>");
-  
-  exec('python anotech.py', $output);
-  print_r($output);
+ print ("Python output: <br>");
+ 
+ exec('python anotech.py', $output);
+ print_r($output);
+ // header('Content-Type: image/png');
+ // $im = imagecreatefrompng("/images/img.png");
+ // imagepng($im);
+ // imagedestroy($im);
+ 
 }
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>anotech</title>
+<title>anotech</title>
 </head>
 <body>
-	<a href="test.html">click</a>
-	<iframe src="temp-plot.html" height="400px"width="400px"></iframe>
+
+<a href="test.php">test</a>
+ <img src="test.png">
+ <img src="test.png">
 </body>
 </html>
