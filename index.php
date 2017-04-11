@@ -26,8 +26,9 @@
             </div>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="train.php" class="make-bold"><span class="glyphicon glyphicon-cog"></span> Train</a></li>
-                    <li><a href="test.php" class="make-bold"><span class="glyphicon glyphicon-wrench"></span> Test</a></li>
+                    <!--<li class=""><a href="train.php" class="make-bold"><span class="glyphicon glyphicon-cog"></span> Train</a></li>
+                    <li><a href="test.php" class="make-bold"><span class="glyphicon glyphicon-wrench"></span> Test</a></li>-->
+                    <li><a href="file_upload.php" class="make-bold"><span class="glyphicon glyphicon-upload"></span> Upload Files</a></li>
                     <li><a href="preCheck.php" class="make-bold"><span class="glyphicon glyphicon-print"></span> Check Your data</a></li>
                 </ul>
             </div>
@@ -56,7 +57,18 @@
         </div>
     </div>
 
-    <!--Training section-->
+    <!--Analyse section-->
+    <div class="container-fluid">
+        <div id="train-section">
+            <div class="train-content">
+                <h3>Let's go for Anomaly Detection<br>
+                    Proceed to the anomaly detection system directly</h3>
+                <a href="file_upload.php" class="btn btn-danger btn-lg active">Train</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Training section
     <div class="container-fluid">
             <div id="train-section">
                 <div class="train-content">
@@ -66,8 +78,9 @@
                 </div>
             </div>
     </div>
+    -->
 
-    <!--Testing Section-->
+    <!--Testing Section
     <div class="container-fluid">
         <div id="test-section">
             <div class="test-content">
@@ -78,6 +91,7 @@
             </div>
         </div>
     </div>
+    -->
 
     <?php
         include "includes/footer.php";

@@ -1,3 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: C B Yadava
+ * Date: 11-04-2017
+ * Time: 05:14 PM
+ *
+ * this is just to show final page after the results have been shown
+ * this will ask the users if they want to use the system again
+ * and redirect them to the uploads.php page where they can use the system again
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +23,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="index.css" rel="stylesheet" type="text/css">
-
-    <script src="js/jquery-1.8.2.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="http://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['controls', 'charteditor']}]}"></script>
-    <script src="js/jquery.csv.js"></script>
 </head>
-<body>
+<body class="body-color">
     <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -40,55 +47,21 @@
         </div>
     </nav>
 
-    <!--Banner-->
-    <div class="jumbotron precheck-banner">
-        <div class="container animated fadeInUp">
-            <h1 style="color: #fff">Check Your Data</h1>
-            <p>Welcome to the pre-check module. Lets check your data. Shall we!!</p>
-        </div>
-    </div>
-
-    <!--Description-->
-    <div class="page-header">
+    <!--Banner image-->
+    <div id="banner-image">
         <div class="container">
-            <h2>Check how your data Looks</h2>
-            <p>
-                Just choose upload your dataset, and you are done!<br>
-                Yup!! That easy!<br>
-                Moreover, please your eyes from various different charts to visualize your data.<br>
-            </p>
-            <p>
-                <br>
-                Go ahead! Try it...<br>
-                Enter the csv file by clicking on the button to choose.<br>
-                Then click the type of graph you want to see for your data.<br>
-            </p>
-        </div>
-        <br><br><br>
-        <div id="chart-display" class="container">
-            <form class="form-inline">
-                <div class="form-group">
-                    <input id="files" type="file" name="file" />
+            <center>
+                <div id="banner_content" style="align-content: center">
+                    <h1 class="animated fadeInUp">Thank You</h1>
+                    <h3>Want to try us again?</h3>
+                    <a href="file_upload.php" class="btn btn-primary btn-lg active">Push me!</a>
                 </div>
-                <div class="form-group">
-                    <input id="edit" type="button" value="Graph Types" />
-                </div>
-            </form>
-            <div id="dashboard" style="display:block; margin:0 auto; width:800px; height:400px;">
-                <div id="chart"></div>
-                <div id="control"></div>
-                <div id="padding" style="display:block; height:50px; background-color:white; visibility:hidden;"></div>
-            </div>
+            </center>
         </div>
     </div>
 
     <?php
-        include "includes/visual_script.php"
+    include "includes/footer.php";
     ?>
-
-    <?php
-        include "includes/footer.php";
-    ?>
-
 </body>
 </html>

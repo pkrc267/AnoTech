@@ -6,68 +6,69 @@
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="3" parent="1" name="ecommerce"/>
-    <schema id="4" parent="1" name="ecommerce_backup"/>
-    <schema id="5" parent="1" name="experimental"/>
-    <schema id="6" parent="1" name="information_schema"/>
-    <schema id="7" parent="1" name="mysql"/>
-    <schema id="8" parent="1" name="performance_schema"/>
-    <schema id="9" parent="1" name="store"/>
-    <schema id="10" parent="1" name="sys"/>
-    <table id="11" parent="2" name="file_base">
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="phpmyadmin"/>
+    <schema id="7" parent="1" name="test"/>
+    <table id="8" parent="2" name="file_base">
       <Comment>table stores dataset</Comment>
     </table>
-    <table id="12" parent="2" name="file_val"/>
-    <column id="13" parent="11" name="id">
+    <table id="9" parent="2" name="file_val"/>
+    <column id="10" parent="8" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="14" parent="11" name="name">
+    <column id="11" parent="8" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="15" parent="11" name="size">
+    <column id="12" parent="8" name="size">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="16" parent="11" name="training_set">
+    <column id="13" parent="8" name="training_set">
       <Position>4</Position>
       <DataType>mediumblob|0</DataType>
     </column>
-    <column id="17" parent="11" name="testing_set">
+    <column id="14" parent="8" name="testing_set">
       <Position>5</Position>
       <DataType>mediumblob|0</DataType>
     </column>
-    <key id="18" parent="11" name="PRIMARY">
+    <column id="15" parent="8" name="ep">
+      <Position>6</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <key id="16" parent="8" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="19" parent="12" name="id">
+    <column id="17" parent="9" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="20" parent="12" name="timestamp">
+    <column id="18" parent="9" name="timestamp">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="12" name="value">
+    <column id="19" parent="9" name="value">
       <Position>3</Position>
       <DataType>float|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="12" name="anomaly">
+    <column id="20" parent="9" name="anomaly">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="23" parent="12" name="PRIMARY">
+    <key id="21" parent="9" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
