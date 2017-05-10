@@ -78,17 +78,34 @@
     <!-- Description -->
     <div class="page-header">
         <div class="container">
-            <h2>Upload your datasets</h2>
-            <p>
-                Just upload the data sets into our servers one after the other<br>
-                <b>Prerequisite:</b><br>
-                Name the dataset before uploading as:<br>
-                Traing set &nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span> &nbsp; train.csv<br>
-                Testing set &nbsp;<span class="glyphicon glyphicon-arrow-right"></span> &nbsp; test.csv<br>
-                <br><br>
-                After the datasets have been uploaded press the <b>Analyse Button</b><br>
-                and let our system work for you &nbsp;&nbsp;<span class="glyphicon glyphicon-dashboard"></span>
-            </p>
+            <div class="row">
+            	<div class="col-md-6">
+            		<h2>Upload your datasets</h2>
+	            	<p>
+		                Just upload the data sets into our servers one after the other<br>
+		                <b>Prerequisite:</b><br>
+		                <span class="glyphicon glyphicon-menu-right"></span> Name the dataset before uploading as:<br>
+		                &nbsp;&nbsp;&nbsp;&nbsp;Traing set &nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span> &nbsp; train.csv<br>
+		                &nbsp;&nbsp;&nbsp;&nbsp;Testing set &nbsp;<span class="glyphicon glyphicon-arrow-right"></span> &nbsp; test.csv<br>
+		                <span class="glyphicon glyphicon-menu-right"></span>Make sure to delete the first row from the dataset that has column<br>
+		                &nbsp;&nbsp;&nbsp;&nbsp;description(eg. "timestamp", "value", "anomaly", "flag", etc.)
+		                <br><br>
+		                After the datasets have been uploaded press the <b>Analyse Button</b><br>
+		                and let our system work for you &nbsp;&nbsp;<span class="glyphicon glyphicon-dashboard"></span>
+	            	</p>
+            	</div>
+            	<div class="col-md-6">
+            		<h2>Try Out samples</h2>
+            		<p>
+            			Try out the website's working via. sample datasets.<br>
+            			Right click on the links below and select <b>Save</b><br>
+            			<span class="glyphicon glyphicon-menu-right"></span>&nbsp;<a href="Uploads/Samples/train.csv">train.csv</a><br>
+            			<span class="glyphicon glyphicon-menu-right"></span>&nbsp;<a href="Uploads/Samples/test.csv">test.csv</a><br>
+            			<br>
+            			Try uploading the samples and then press <b>Analyse</b> button to procees.<br>
+            		</p>
+            	</div>
+            </div>
         </div>
     </div>
 
